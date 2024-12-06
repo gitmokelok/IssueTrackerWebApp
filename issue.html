@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Details</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; padding: 20px; background-color: #f4f4f9; }
+        .details { max-width: 600px; margin: auto; background: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+        .details p { margin-bottom: 10px; }
+        .navigation { text-align: center; margin-top: 20px; }
+        .navigation a { margin: 0 10px; text-decoration: none; color: #007BFF; }
+        .navigation a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>Issue Details</h1>
+    <div class="details" id="issueDetails"></div>
+
+    <!-- Navigation Links -->
+    <div class="navigation">
+        <a href="index.html">Return to Issue List</a>
+        <span id="prevLink"></span>
+        <span id="nextLink"></span>
+    </div>
+
+    <script>
+        // Get case number from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const caseNumber = urlParams.get('case');
+
+        // Fetch and parse the JSON file
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                const issueDetails = document.getElementById('issueDetails');
+                const currentIndex = data.findIndex(item => item.CaseNumber === caseNumber);
+
+                if (currentIndex !== -1) {
+                    const issue = data[currentIndex];
+
+                    // Display issue details
+                    issueDetails.innerHTML = `
+                        <p><strong>Case Number:</strong> ${issue.CaseNumber}</p>
+                        <p><strong>Customer Name:</strong> ${issue.CustomerName}</p>
+                        <p><strong>Email Address:</strong> ${issue.Email}</p>
+                        <p><strong>Category:</strong> ${issue.Category}</p>
+                        <p><strong>Description:</strong> ${issue.Description}</p>`;
+
+                    // Add navigation links for previous and next issues
+                    const prevLink = document.getElementById('prevLink');
+                    const nextLink = document.getElementById('nextLink');
+
+                    if (currentIndex > 0) {
+                        const prevCase = data[currentIndex - 1].CaseNumber;
+                        prevLink.innerHTML = `<a href="issue.html?case=${prevCase}">Previous Issue</a>`;
+                    }
+
+                    if (currentIndex < data.length - 1) {
+                        const nextCase = data[currentIndex + 1].CaseNumber;
+                        nextLink.innerHTML = `<a href="issue.html?case=${nextCase}">Next Issue</a>`;
+                    }
+                } else {
+                    issueDetails.innerHTML = `<p>Issue not found.</p>`;
+                }
+            })
+            .catch(error => console.error('Error loading issue details:', error));
+    </script>
+</body>
+</html>

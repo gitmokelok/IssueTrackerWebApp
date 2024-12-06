@@ -1,0 +1,23 @@
+[
+    {
+        "CaseNumber": "CS2024-00001",
+        "CustomerName": "John Doe",
+        "Email": "johndoe@example.com",
+        "Category": "Technical Support",
+        "Description": "I am unable to log in to my account. It keeps showing an error message."
+    },
+    {
+        "CaseNumber": "CS2024-00002",
+        "CustomerName": "Jane Smith",
+        "Email": "janesmith@example.com",
+        "Category": "Billing Support",
+        "Description": "I was overcharged on my last bill and need assistance."
+    },
+    {
+        "CaseNumber": "CS2024-00003",
+        "CustomerName": "Mike Johnson",
+        "Email": "mikejohnson@example.com",
+        "Category": "General Inquiry",
+        "Description": "Can you provide more details about your premium plan?"
+    }
+]
