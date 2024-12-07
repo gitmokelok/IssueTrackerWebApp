@@ -37,6 +37,8 @@
                 <th>Email</th>
                 <th>Category</th>
                 <th>Description</th>
+                <th>Status</th>
+                <th>Assigned Person</th>
             </tr>
         </thead>
         <tbody></tbody>
@@ -57,7 +59,9 @@
                         <td>${issue.CustomerName}</td>
                         <td>${issue.Email}</td>
                         <td>${issue.Category}</td>
-                        <td>${issue.Description.substring(0, 50)}...</td>`;
+                        <td>${issue.Description.substring(0, 50)}...</td>
+                        <td>${issue.Status}</td>
+                        <td>${issue.AssignedPerson}</td>`;
                     
                     tableBody.appendChild(row);
                 });

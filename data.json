@@ -1,23 +1,992 @@
 [
-    {
-        "CaseNumber": "CS2024-00001",
-        "CustomerName": "John Doe",
-        "Email": "johndoe@example.com",
-        "Category": "Technical Support",
-        "Description": "I am unable to log in to my account. It keeps showing an error message."
-    },
-    {
-        "CaseNumber": "CS2024-00002",
-        "CustomerName": "Jane Smith",
-        "Email": "janesmith@example.com",
-        "Category": "Billing Support",
-        "Description": "I was overcharged on my last bill and need assistance."
-    },
-    {
-        "CaseNumber": "CS2024-00003",
-        "CustomerName": "Mike Johnson",
-        "Email": "mikejohnson@example.com",
-        "Category": "General Inquiry",
-        "Description": "Can you provide more details about your premium plan?"
-    }
+  {
+    "CaseNumber": "CS2024-00001",
+    "CustomerName": "Emma Johnson",
+    "Email": "emma.johnson@example.com",
+    "Category": "Technical Support",
+    "Description": "I am unable to reset my password. Each time I submit the reset form, I receive no email. I have checked my spam folder and verified my email address is correct. This has been ongoing for three days. Can you help me resolve this?",
+    "Status": "Open",
+    "AssignedPerson": "Sophia Roberts"
+  },
+  {
+    "CaseNumber": "CS2024-00002",
+    "CustomerName": "Liam Smith",
+    "Email": "liam.smith@example.com",
+    "Category": "Billing Support",
+    "Description": "I was charged twice for my last payment. The duplicate charge appeared on my bank statement yesterday. Could you please investigate and issue a refund for the second charge?",
+    "Status": "In Progress",
+    "AssignedPerson": "Michael Brown"
+  },
+  {
+    "CaseNumber": "CS2024-00003",
+    "CustomerName": "Olivia Davis",
+    "Email": "olivia.davis@example.com",
+    "Category": "General Inquiry",
+    "Description": "I would like to know if your platform supports integrations with third-party tools like Zapier or Microsoft Teams. I run a small business and need seamless integration for my workflows.",
+    "Status": "Closed",
+    "AssignedPerson": "Isabella Taylor"
+  },
+  {
+    "CaseNumber": "CS2024-00004",
+    "CustomerName": "Noah Martinez",
+    "Email": "noah.martinez@example.com",
+    "Category": "Technical Support",
+    "Description": "The mobile app crashes every time I try to access the 'Account Settings' page. I am using the latest version of iOS. I have tried reinstalling the app, but the issue persists. Please help resolve this as soon as possible.",
+    "Status": "On Hold",
+    "AssignedPerson": "Ethan Harris"
+  },
+  {
+    "CaseNumber": "CS2024-00005",
+    "CustomerName": "Isabella Wilson",
+    "Email": "isabella.wilson@example.com",
+    "Category": "Billing Support",
+    "Description": "I need assistance updating my credit card details. The system gives me an error message every time I try to submit the new information. I'm worried this might disrupt my subscription payments.",
+    "Status": "New",
+    "AssignedPerson": "Emma Lopez"
+  },
+  {
+    "CaseNumber": "CS2024-00006",
+    "CustomerName": "Sophia Gonzalez",
+    "Email": "sophia.gonzalez@example.com",
+    "Category": "Technical Support",
+    "Description": "The live chat feature on your website is not functioning. I get a blank screen instead of the chat interface. I depend on this feature for immediate support. Could this be a server-side issue?",
+    "Status": "Open",
+    "AssignedPerson": "Lucas Walker"
+  },
+  {
+    "CaseNumber": "CS2024-00007",
+    "CustomerName": "Mason Perez",
+    "Email": "mason.perez@example.com",
+    "Category": "General Inquiry",
+    "Description": "Do you offer any tutorials or webinars for new users of your platform? I am finding it a bit overwhelming to navigate all the features. Any resources would be appreciated.",
+    "Status": "Closed",
+    "AssignedPerson": "Charlotte Green"
+  },
+  {
+    "CaseNumber": "CS2024-00008",
+    "CustomerName": "Ava Miller",
+    "Email": "ava.miller@example.com",
+    "Category": "Billing Support",
+    "Description": "I received an email about a failed payment, but my bank account shows the transaction was successful. Can you verify this and ensure my service remains uninterrupted?",
+    "Status": "In Progress",
+    "AssignedPerson": "Benjamin White"
+  },
+  {
+    "CaseNumber": "CS2024-00009",
+    "CustomerName": "Elijah Lee",
+    "Email": "elijah.lee@example.com",
+    "Category": "Technical Support",
+    "Description": "The website's search feature is returning inaccurate results. For example, when I search for 'user guide,' it shows unrelated articles. Could you check and fix this issue? It has been ongoing for a week now.",
+    "Status": "New",
+    "AssignedPerson": "Amelia Thomas"
+  },
+  {
+    "CaseNumber": "CS2024-00010",
+    "CustomerName": "Emily Anderson",
+    "Email": "emily.anderson@example.com",
+    "Category": "General Inquiry",
+    "Description": "Could you please provide details on your annual pricing plans? I want to switch from monthly to annual billing but need to know if any discounts are offered for upfront payments.",
+    "Status": "On Hold",
+    "AssignedPerson": "Henry Moore"
+  },
+  {
+    "CaseNumber": "CS2024-00011",
+    "CustomerName": "Jack Taylor",
+    "Email": "jack.taylor@example.com",
+    "Category": "Technical Support",
+    "Description": "I am encountering an error message, 'Access Denied,' whenever I try to log in to my account. This issue started yesterday, and I cannot access important files. Please assist.",
+    "Status": "Open",
+    "AssignedPerson": "Liam Clark"
+  },
+  {
+    "CaseNumber": "CS2024-00012",
+    "CustomerName": "Amelia Martinez",
+    "Email": "amelia.martinez@example.com",
+    "Category": "Billing Support",
+    "Description": "I canceled my subscription last month, but I was still charged for this billing cycle. Can you confirm the cancellation and refund the amount charged?",
+    "Status": "In Progress",
+    "AssignedPerson": "Sophia Robinson"
+  },
+  {
+    "CaseNumber": "CS2024-00013",
+    "CustomerName": "Charlotte Thomas",
+    "Email": "charlotte.thomas@example.com",
+    "Category": "General Inquiry",
+    "Description": "Are there any additional fees or taxes applicable when purchasing a premium subscription? I want to make sure there are no hidden charges before upgrading.",
+    "Status": "Closed",
+    "AssignedPerson": "Evelyn King"
+  },
+  {
+    "CaseNumber": "CS2024-00014",
+    "CustomerName": "James Lewis",
+    "Email": "james.lewis@example.com",
+    "Category": "Technical Support",
+    "Description": "The desktop application is not syncing properly with the mobile app. Data added on one device does not appear on the other. I've tried restarting both apps, but the issue persists.",
+    "Status": "On Hold",
+    "AssignedPerson": "Ethan Brown"
+  },
+  {
+    "CaseNumber": "CS2024-00015",
+    "CustomerName": "Mia Robinson",
+    "Email": "mia.robinson@example.com",
+    "Category": "Billing Support",
+    "Description": "I need a detailed invoice for my last five transactions. The invoices available on the platform do not show the breakdown of services. Can you provide this information?",
+    "Status": "New",
+    "AssignedPerson": "Lucas Harris"
+  },
+  {
+    "CaseNumber": "CS2024-00016",
+    "CustomerName": "Alexander Evans",
+    "Email": "alexander.evans@example.com",
+    "Category": "General Inquiry",
+    "Description": "Does your service support international payments? I am planning to use your platform while working abroad and need clarity on supported payment methods.",
+    "Status": "Closed",
+    "AssignedPerson": "Sophia Martinez"
+  },
+  {
+    "CaseNumber": "CS2024-00017",
+    "CustomerName": "Harper Mitchell",
+    "Email": "harper.mitchell@example.com",
+    "Category": "Technical Support",
+    "Description": "Whenever I try to upload a document to your platform, the upload process gets stuck at 50%. I've tried different file formats and sizes, but nothing works. Is there a known issue with the upload functionality?",
+    "Status": "Open",
+    "AssignedPerson": "Olivia Scott"
+  },
+  {
+    "CaseNumber": "CS2024-00018",
+    "CustomerName": "Evelyn Carter",
+    "Email": "evelyn.carter@example.com",
+    "Category": "Billing Support",
+    "Description": "I recently downgraded my subscription plan, but I was still charged at the higher rate. Could you verify my account status and issue a refund for the difference?",
+    "Status": "In Progress",
+    "AssignedPerson": "Daniel Turner"
+  },
+  {
+    "CaseNumber": "CS2024-00019",
+    "CustomerName": "Jackson White",
+    "Email": "jackson.white@example.com",
+    "Category": "General Inquiry",
+    "Description": "Do you plan to release a dark mode feature for your mobile app? It would greatly improve usability for users who work at night or prefer this mode.",
+    "Status": "Closed",
+    "AssignedPerson": "Emma Wright"
+  },
+  {
+    "CaseNumber": "CS2024-00020",
+    "CustomerName": "Avery Harris",
+    "Email": "avery.harris@example.com",
+    "Category": "Technical Support",
+    "Description": "I'm having trouble accessing my account on a public Wi-Fi network. It works perfectly fine on my home network. Could there be an issue with how your platform handles security on public networks?",
+    "Status": "On Hold",
+    "AssignedPerson": "Ryan Ramirez"
+  },
+  {
+    "CaseNumber": "CS2024-00021",
+    "CustomerName": "Ella Nelson",
+    "Email": "ella.nelson@example.com",
+    "Category": "Billing Support",
+    "Description": "I want to set up auto-billing for my subscription, but the option seems to be missing from my account settings. Could you guide me on how to enable auto-pay?",
+    "Status": "New",
+    "AssignedPerson": "Sophia Adams"
+  },
+  {
+    "CaseNumber": "CS2024-00022",
+    "CustomerName": "Henry Bell",
+    "Email": "henry.bell@example.com",
+    "Category": "Technical Support",
+    "Description": "The notifications from the platform are not being sent to my email. I have checked my notification settings, and everything seems to be enabled. Could there be a technical issue?",
+    "Status": "Open",
+    "AssignedPerson": "Charlotte Campbell"
+  },
+  {
+    "CaseNumber": "CS2024-00023",
+    "CustomerName": "Grace Young",
+    "Email": "grace.young@example.com",
+    "Category": "General Inquiry",
+    "Description": "Do you have a roadmap of upcoming features for the platform? I am particularly interested in learning more about improvements to account customization.",
+    "Status": "Closed",
+    "AssignedPerson": "Lucas Murphy"
+  },
+  {
+    "CaseNumber": "CS2024-00024",
+    "CustomerName": "Sebastian Brooks",
+    "Email": "sebastian.brooks@example.com",
+    "Category": "Billing Support",
+    "Description": "I was charged an activation fee when signing up for my subscription, but I don’t recall agreeing to this. Could you provide more details about this charge?",
+    "Status": "In Progress",
+    "AssignedPerson": "Olivia Price"
+  },
+  {
+    "CaseNumber": "CS2024-00025",
+    "CustomerName": "Zoey Morgan",
+    "Email": "zoey.morgan@example.com",
+    "Category": "Technical Support",
+    "Description": "I keep getting disconnected from the platform during live sessions. My internet connection is stable, so I suspect the issue is on your end. Could you look into this?",
+    "Status": "Open",
+    "AssignedPerson": "Ethan Moore"
+  },
+  {
+    "CaseNumber": "CS2024-00026",
+    "CustomerName": "Levi Bailey",
+    "Email": "levi.bailey@example.com",
+    "Category": "General Inquiry",
+    "Description": "Can you confirm if your platform supports multiple user accounts under a single subscription? I am managing a team and need everyone to have access with their own logins.",
+    "Status": "On Hold",
+    "AssignedPerson": "Emily Hernandez"
+  },
+  {
+    "CaseNumber": "CS2024-00027",
+    "CustomerName": "Ellie Rivera",
+    "Email": "ellie.rivera@example.com",
+    "Category": "Billing Support",
+    "Description": "I accidentally paid for two annual subscriptions instead of one. Can you merge these and refund the extra payment? Your assistance is appreciated.",
+    "Status": "New",
+    "AssignedPerson": "Liam Rodriguez"
+  },
+  {
+    "CaseNumber": "CS2024-00028",
+    "CustomerName": "Daniel Foster",
+    "Email": "daniel.foster@example.com",
+    "Category": "Technical Support",
+    "Description": "The video tutorials on your support page are not loading. I have tried refreshing the page and testing a different device, but the issue persists. Can you check if the videos are broken?",
+    "Status": "In Progress",
+    "AssignedPerson": "Amelia Bailey"
+  },
+  {
+    "CaseNumber": "CS2024-00029",
+    "CustomerName": "Scarlett Perry",
+    "Email": "scarlett.perry@example.com",
+    "Category": "General Inquiry",
+    "Description": "Are there any educational discounts available for university students? I want to purchase a subscription but am looking for student pricing options.",
+    "Status": "Closed",
+    "AssignedPerson": "Ryan Cooper"
+  },
+  {
+    "CaseNumber": "CS2024-00030",
+    "CustomerName": "Jacob Murphy",
+    "Email": "jacob.murphy@example.com",
+    "Category": "Technical Support",
+    "Description": "The platform keeps logging me out after a few minutes of inactivity, even though I'm in the middle of a task. Is there a way to extend the session timeout period?",
+    "Status": "Open",
+    "AssignedPerson": "Zoe Flores"
+  },
+  {
+    "CaseNumber": "CS2024-00031",
+    "CustomerName": "Victoria Powell",
+    "Email": "victoria.powell@example.com",
+    "Category": "Billing Support",
+    "Description": "I need a formal receipt for my last two payments to submit to my company for reimbursement. The invoices available on your platform lack the necessary details.",
+    "Status": "New",
+    "AssignedPerson": "Sophia Martinez"
+  },
+  {
+    "CaseNumber": "CS2024-00032",
+    "CustomerName": "Madison Torres",
+    "Email": "madison.torres@example.com",
+    "Category": "General Inquiry",
+    "Description": "Does your platform have an option to export data for offline use? I need to maintain backups of my records in case of internet issues.",
+    "Status": "Closed",
+    "AssignedPerson": "Benjamin Foster"
+  },
+  {
+    "CaseNumber": "CS2024-00033",
+    "CustomerName": "Nathan Jenkins",
+    "Email": "nathan.jenkins@example.com",
+    "Category": "Technical Support",
+    "Description": "The notifications on the mobile app are arriving several hours late. I rely on timely updates, so this is becoming a problem. Please investigate and resolve this.",
+    "Status": "In Progress",
+    "AssignedPerson": "Ethan Morgan"
+  },
+  {
+    "CaseNumber": "CS2024-00034",
+    "CustomerName": "Luna Parker",
+    "Email": "luna.parker@example.com",
+    "Category": "Billing Support",
+    "Description": "I didn’t receive the discount I applied at checkout for the annual plan. Can you validate my account and apply the discount retroactively?",
+    "Status": "New",
+    "AssignedPerson": "Olivia Reed"
+  },
+  {
+    "CaseNumber": "CS2024-00035",
+    "CustomerName": "Samuel Long",
+    "Email": "samuel.long@example.com",
+    "Category": "General Inquiry",
+    "Description": "Can I transfer my subscription to another person? I will no longer need it and want to pass it on to someone else. How can I make it happen?",
+    "Status": "Open",
+    "AssignedPerson": "Sophia Cook"
+  },
+  {
+    "CaseNumber": "CS2024-00036",
+    "CustomerName": "Mila Nguyen",
+    "Email": "mila.nguyen@example.com",
+    "Category": "Technical Support",
+    "Description": "When I try to download my account statements, the files are corrupted and cannot be opened. I have tried different browsers, but the problem persists. Can you assist?",
+    "Status": "On Hold",
+    "AssignedPerson": "James Griffin"
+  },
+  {
+    "CaseNumber": "CS2024-00037",
+    "CustomerName": "Hudson Hill",
+    "Email": "hudson.hill@example.com",
+    "Category": "Billing Support",
+    "Description": "I received an invoice for a service I didn’t subscribe to. Can you check and confirm if this was sent to me by mistake? If not, please resolve this discrepancy.",
+    "Status": "In Progress",
+    "AssignedPerson": "Lucas Bell"
+  },
+  {
+    "CaseNumber": "CS2024-00038",
+    "CustomerName": "Bella Rivera",
+    "Email": "bella.rivera@example.com",
+    "Category": "General Inquiry",
+    "Description": "Does your platform work with international currencies? I plan to use your service in multiple regions and need to confirm if currency conversion is supported.",
+    "Status": "Closed",
+    "AssignedPerson": "Charlotte Mitchell"
+  },
+  {
+    "CaseNumber": "CS2024-00039",
+    "CustomerName": "Elijah Ward",
+    "Email": "elijah.ward@example.com",
+    "Category": "Technical Support",
+    "Description": "I am unable to update my account security settings. Every time I attempt to change my password, I receive an error message. Can you help resolve this?",
+    "Status": "Open",
+    "AssignedPerson": "Emma Ramirez"
+  },
+  {
+    "CaseNumber": "CS2024-00040",
+    "CustomerName": "Victoria Hayes",
+    "Email": "victoria.hayes@example.com",
+    "Category": "Billing Support",
+    "Description": "The payment confirmation email I received doesn’t include a transaction ID. I need this for my records. Can you resend it with the necessary information?",
+    "Status": "New",
+    "AssignedPerson": "Henry Morris"
+  },
+  {
+    "CaseNumber": "CS2024-00041",
+    "CustomerName": "Luke Sanders",
+    "Email": "luke.sanders@example.com",
+    "Category": "Technical Support",
+    "Description": "The platform crashes on my browser when I try to generate reports. I’ve tried clearing cache and using a different browser, but the issue persists. Please help.",
+    "Status": "In Progress",
+    "AssignedPerson": "Isabella Evans"
+  },
+  {
+    "CaseNumber": "CS2024-00042",
+    "CustomerName": "Hannah Foster",
+    "Email": "hannah.foster@example.com",
+    "Category": "General Inquiry",
+    "Description": "I want to know if there's an option to pause my subscription for a few months without losing my account data. Can you clarify the process?",
+    "Status": "Closed",
+    "AssignedPerson": "Mason Hughes"
+  },
+  {
+    "CaseNumber": "CS2024-00043",
+    "CustomerName": "Aaron Cooper",
+    "Email": "aaron.cooper@example.com",
+    "Category": "Technical Support",
+    "Description": "The system logs me out every 30 minutes, even when I’m active. Is there a way to extend the session duration or disable this feature?",
+    "Status": "On Hold",
+    "AssignedPerson": "Sophia Flores"
+  },
+  {
+    "CaseNumber": "CS2024-00044",
+    "CustomerName": "Leah Peterson",
+    "Email": "leah.peterson@example.com",
+    "Category": "Billing Support",
+    "Description": "I was charged twice for a single transaction. Can you investigate this and process a refund for the extra charge? I have attached details to my request.",
+    "Status": "New",
+    "AssignedPerson": "Grace Scott"
+  },
+  {
+    "CaseNumber": "CS2024-00045",
+    "CustomerName": "Ryan Phillips",
+    "Email": "ryan.phillips@example.com",
+    "Category": "General Inquiry",
+    "Description": "Does your company offer a nonprofit discount for organizations? My charity is considering using your platform, but we are on a tight budget.",
+    "Status": "Closed",
+    "AssignedPerson": "Amelia Adams"
+  },
+  {
+    "CaseNumber": "CS2024-00046",
+    "CustomerName": "Chloe Bennett",
+    "Email": "chloe.bennett@example.com",
+    "Category": "Technical Support",
+    "Description": "The app keeps freezing every time I try to upload multiple files simultaneously. I've tested on two different devices, and the issue persists. Is there a file size limitation causing this?",
+    "Status": "Open",
+    "AssignedPerson": "Ethan Powell"
+  },
+  {
+    "CaseNumber": "CS2024-00047",
+    "CustomerName": "Owen Barnes",
+    "Email": "owen.barnes@example.com",
+    "Category": "Billing Support",
+    "Description": "I tried to update my payment method, but it failed to save my new credit card details. Can you assist me in resolving this issue as my next billing date is approaching?",
+    "Status": "New",
+    "AssignedPerson": "Charlotte Nelson"
+  },
+  {
+    "CaseNumber": "CS2024-00048",
+    "CustomerName": "Layla Brooks",
+    "Email": "layla.brooks@example.com",
+    "Category": "General Inquiry",
+    "Description": "Will your platform support additional languages in the future? My colleagues and I would benefit from using the interface in French. Any updates regarding this feature?",
+    "Status": "Closed",
+    "AssignedPerson": "Lucas Martinez"
+  },
+  {
+    "CaseNumber": "CS2024-00049",
+    "CustomerName": "Alexander Jenkins",
+    "Email": "alexander.jenkins@example.com",
+    "Category": "Technical Support",
+    "Description": "Search results on your website are displaying outdated content. I've already cleared my cache and tried different browsers. Could you check if the indexing is correct?",
+    "Status": "In Progress",
+    "AssignedPerson": "Sophia Rodriguez"
+  },
+  {
+    "CaseNumber": "CS2024-00050",
+    "CustomerName": "Lily Diaz",
+    "Email": "lily.diaz@example.com",
+    "Category": "Billing Support",
+    "Description": "I need a detailed breakdown of the charges from my last invoice. The amount seems to include fees I don’t recognize. Could you clarify this for me?",
+    "Status": "New",
+    "AssignedPerson": "Henry Clark"
+  },
+  {
+    "CaseNumber": "CS2024-00051",
+    "CustomerName": "Isaac Gray",
+    "Email": "isaac.gray@example.com",
+    "Category": "Technical Support",
+    "Description": "I'm unable to reset my two-factor authentication settings. The system keeps redirecting me to an error page. Please assist as I cannot log into my account.",
+    "Status": "On Hold",
+    "AssignedPerson": "Evelyn Hughes"
+  },
+  {
+    "CaseNumber": "CS2024-00052",
+    "CustomerName": "Aubrey Ross",
+    "Email": "aubrey.ross@example.com",
+    "Category": "General Inquiry",
+    "Description": "Are there any tutorials or guides available for onboarding new employees to your platform? A centralized resource would save us time during setup.",
+    "Status": "Closed",
+    "AssignedPerson": "Michael Bailey"
+  },
+  {
+    "CaseNumber": "CS2024-00053",
+    "CustomerName": "Liam King",
+    "Email": "liam.king@example.com",
+    "Category": "Billing Support",
+    "Description": "My subscription was canceled last month, but I've been charged again this billing cycle. Could you please confirm the cancellation and refund the charge?",
+    "Status": "In Progress",
+    "AssignedPerson": "Grace Adams"
+  },
+  {
+    "CaseNumber": "CS2024-00054",
+    "CustomerName": "Zoe Foster",
+    "Email": "zoe.foster@example.com",
+    "Category": "Technical Support",
+    "Description": "I’m experiencing a lag when navigating between different pages on the app. I’ve updated to the latest version, but the problem is still there. Could this be a server issue?",
+    "Status": "Open",
+    "AssignedPerson": "Ethan Harris"
+  },
+  {
+    "CaseNumber": "CS2024-00055",
+    "CustomerName": "Aria Collins",
+    "Email": "aria.collins@example.com",
+    "Category": "General Inquiry",
+    "Description": "I’d like to know if your platform supports API integrations for custom analytics. If yes, could you share any documentation to help me set it up?",
+    "Status": "Closed",
+    "AssignedPerson": "Sophia Ramirez"
+  },
+  {
+    "CaseNumber": "CS2024-00056",
+    "CustomerName": "Jacob Reed",
+    "Email": "jacob.reed@example.com",
+    "Category": "Technical Support",
+    "Description": "The email notifications are being marked as spam by my company's email system. I've already whitelisted your domain, but it hasn’t resolved the issue. Can you check on your end?",
+    "Status": "In Progress",
+    "AssignedPerson": "Charlotte Bell"
+  },
+  {
+    "CaseNumber": "CS2024-00057",
+    "CustomerName": "Ella Cooper",
+    "Email": "ella.cooper@example.com",
+    "Category": "Billing Support",
+    "Description": "I accidentally signed up for a yearly subscription instead of a monthly one. Can I switch my subscription and receive a refund for the difference?",
+    "Status": "New",
+    "AssignedPerson": "Benjamin Brown"
+  },
+  {
+    "CaseNumber": "CS2024-00058",
+    "CustomerName": "Mason Watson",
+    "Email": "mason.watson@example.com",
+    "Category": "Technical Support",
+    "Description": "The dashboard widgets are not displaying the correct data. For example, my sales numbers are showing as zero despite confirmed transactions. Can you investigate this issue?",
+    "Status": "On Hold",
+    "AssignedPerson": "Zoe Harris"
+  },
+  {
+    "CaseNumber": "CS2024-00059",
+    "CustomerName": "Scarlett Morris",
+    "Email": "scarlett.morris@example.com",
+    "Category": "General Inquiry",
+    "Description": "Do you have any partnerships or discounts for educational institutions? Our school is looking at purchasing a multi-user license.",
+    "Status": "Closed",
+    "AssignedPerson": "Ryan Walker"
+  },
+  {
+    "CaseNumber": "CS2024-00060",
+    "CustomerName": "Logan Howard",
+    "Email": "logan.howard@example.com",
+    "Category": "Billing Support",
+    "Description": "I noticed a foreign transaction fee applied to my last payment. I’ve never seen this fee before. Can you explain why this was charged and if it can be waived?",
+    "Status": "In Progress",
+    "AssignedPerson": "Henry Martinez"
+  },
+  {
+    "CaseNumber": "CS2024-00061",
+    "CustomerName": "Hazel Turner",
+    "Email": "hazel.turner@example.com",
+    "Category": "Technical Support",
+    "Description": "I keep encountering a '503 Service Unavailable' error when trying to access my dashboard. This issue seems intermittent as it works fine at times. Could you confirm if this is a server issue?",
+    "Status": "Open",
+    "AssignedPerson": "Amelia Hughes"
+  },
+  {
+    "CaseNumber": "CS2024-00062",
+    "CustomerName": "Wyatt Simmons",
+    "Email": "wyatt.simmons@example.com",
+    "Category": "Billing Support",
+    "Description": "I was charged for a service upgrade I didn’t authorize. I need this charge reversed and my account returned to the original subscription plan.",
+    "Status": "New",
+    "AssignedPerson": "Michael Bailey"
+  },
+  {
+    "CaseNumber": "CS2024-00063",
+    "CustomerName": "Maya Parker",
+    "Email": "maya.parker@example.com",
+    "Category": "General Inquiry",
+    "Description": "Does your platform offer training sessions for teams? We are rolling this out company-wide and would like to know if you offer such services.",
+    "Status": "Closed",
+    "AssignedPerson": "Emily Reed"
+  },
+  {
+    "CaseNumber": "CS2024-00064",
+    "CustomerName": "Leo Butler",
+    "Email": "leo.butler@example.com",
+    "Category": "Technical Support",
+    "Description": "I cannot export my project files in PDF format. The option is grayed out, and I need this functionality for client presentations. Could you help resolve this?",
+    "Status": "In Progress",
+    "AssignedPerson": "Lucas Ramirez"
+  },
+  {
+    "CaseNumber": "CS2024-00065",
+    "CustomerName": "Nora Morgan",
+    "Email": "nora.morgan@example.com",
+    "Category": "Billing Support",
+    "Description": "I need to change my billing address but am unable to update it in my account settings. Is there another way to make this change?",
+    "Status": "New",
+    "AssignedPerson": "Liam Harris"
+  },
+  {
+    "CaseNumber": "CS2024-00066",
+    "CustomerName": "Elliot Hayes",
+    "Email": "elliot.hayes@example.com",
+    "Category": "General Inquiry",
+    "Description": "Are there any plans to introduce a loyalty program for customers? I’ve been using your services for years and would appreciate any rewards or special offers for long-term users.",
+    "Status": "On Hold",
+    "AssignedPerson": "Charlotte Adams"
+  },
+  {
+    "CaseNumber": "CS2024-00067",
+    "CustomerName": "Stella Reed",
+    "Email": "stella.reed@example.com",
+    "Category": "Technical Support",
+    "Description": "I am unable to sync my account across devices. My data from my desktop isn’t appearing on the mobile app, even though I am logged in with the same credentials.",
+    "Status": "Open",
+    "AssignedPerson": "Ethan Scott"
+  },
+  {
+    "CaseNumber": "CS2024-00068",
+    "CustomerName": "Miles Carter",
+    "Email": "miles.carter@example.com",
+    "Category": "Billing Support",
+    "Description": "I was charged late fees on my last invoice even though I made the payment on time. Could you verify and remove the late fee charge?",
+    "Status": "In Progress",
+    "AssignedPerson": "Emma Powell"
+  },
+  {
+    "CaseNumber": "CS2024-00069",
+    "CustomerName": "Lila Peterson",
+    "Email": "lila.peterson@example.com",
+    "Category": "General Inquiry",
+    "Description": "Do you offer affiliate programs for recommending your platform to others? I have a network of clients who could benefit from using your services.",
+    "Status": "Closed",
+    "AssignedPerson": "Isabella Baker"
+  },
+  {
+    "CaseNumber": "CS2024-00070",
+    "CustomerName": "Hunter Coleman",
+    "Email": "hunter.coleman@example.com",
+    "Category": "Technical Support",
+    "Description": "The platform freezes when I try to upload files larger than 50MB. I have a fast internet connection, so I don’t think it’s a local issue. Can you help?",
+    "Status": "Open",
+    "AssignedPerson": "Ryan Murphy"
+  },
+  {
+    "CaseNumber": "CS2024-00071",
+    "CustomerName": "Aurora Evans",
+    "Email": "aurora.evans@example.com",
+    "Category": "Billing Support",
+    "Description": "I didn’t receive a receipt for my most recent payment. Could you resend it to my email? I need it for my financial records.",
+    "Status": "New",
+    "AssignedPerson": "Sophia King"
+  },
+  {
+    "CaseNumber": "CS2024-00072",
+    "CustomerName": "Carson Ward",
+    "Email": "carson.ward@example.com",
+    "Category": "General Inquiry",
+    "Description": "What is your refund policy for annual plans? I would like to know my options in case I need to cancel my subscription early.",
+    "Status": "Closed",
+    "AssignedPerson": "Elijah Hughes"
+  },
+  {
+    "CaseNumber": "CS2024-00073",
+    "CustomerName": "Zara Howard",
+    "Email": "zara.howard@example.com",
+    "Category": "Technical Support",
+    "Description": "I am unable to connect my account to third-party tools like Zapier. The authorization keeps failing. Could you check if this is an issue on your end?",
+    "Status": "In Progress",
+    "AssignedPerson": "Grace Martinez"
+  },
+  {
+    "CaseNumber": "CS2024-00074",
+    "CustomerName": "Jayden Russell",
+    "Email": "jayden.russell@example.com",
+    "Category": "Billing Support",
+    "Description": "I made a payment yesterday, but my subscription still shows as inactive. Could you check and activate my account manually?",
+    "Status": "New",
+    "AssignedPerson": "Henry Walker"
+  },
+  {
+    "CaseNumber": "CS2024-00075",
+    "CustomerName": "Piper Rivera",
+    "Email": "piper.rivera@example.com",
+    "Category": "Technical Support",
+    "Description": "My session keeps timing out after 10 minutes of inactivity, even though my project autosave is enabled. Could you check if this is normal behavior or a bug?",
+    "Status": "On Hold",
+    "AssignedPerson": "Sophia Roberts"
+  },
+  {
+    "CaseNumber": "CS2024-00076",
+    "CustomerName": "Eleanor Mitchell",
+    "Email": "eleanor.mitchell@example.com",
+    "Category": "General Inquiry",
+    "Description": "Are there any options for bulk purchasing multiple licenses for a large team? If so, could you provide details about pricing and potential discounts?",
+    "Status": "Closed",
+    "AssignedPerson": "Daniel Campbell"
+  },
+  {
+    "CaseNumber": "CS2024-00077",
+    "CustomerName": "Grayson Hall",
+    "Email": "grayson.hall@example.com",
+    "Category": "Billing Support",
+    "Description": "I received a charge for a feature I never enabled. Could you review my account activity and refund this unauthorized charge?",
+    "Status": "New",
+    "AssignedPerson": "Emma Flores"
+  },
+  {
+    "CaseNumber": "CS2024-00078",
+    "CustomerName": "Isla Rogers",
+    "Email": "isla.rogers@example.com",
+    "Category": "Technical Support",
+    "Description": "Your platform is not displaying images in the reports I generate. I need to include visuals for my presentations. Could you investigate and resolve this issue?",
+    "Status": "Open",
+    "AssignedPerson": "Ethan Ramirez"
+  },
+  {
+    "CaseNumber": "CS2024-00079",
+    "CustomerName": "Connor Bailey",
+    "Email": "connor.bailey@example.com",
+    "Category": "Billing Support",
+    "Description": "I canceled my subscription before the renewal date, but I was still charged. Can you confirm the cancellation and initiate a refund?",
+    "Status": "In Progress",
+    "AssignedPerson": "Sophia Harris"
+  },
+  {
+    "CaseNumber": "CS2024-00080",
+    "CustomerName": "Lucy Morris",
+    "Email": "lucy.morris@example.com",
+    "Category": "General Inquiry",
+    "Description": "Do you offer any certification programs for advanced users of the platform? I want to showcase my expertise with an official credential.",
+    "Status": "On Hold",
+    "AssignedPerson": "Olivia Price"
+  },
+  {
+    "CaseNumber": "CS2024-00081",
+    "CustomerName": "Jonah Cooper",
+    "Email": "jonah.cooper@example.com",
+    "Category": "Technical Support",
+    "Description": "My account has been locked due to multiple failed login attempts. I’ve successfully reset my password, but the account remains inaccessible. Please unlock it.",
+    "Status": "Open",
+    "AssignedPerson": "Charlotte White"
+  },
+  {
+    "CaseNumber": "CS2024-00082",
+    "CustomerName": "Naomi Diaz",
+    "Email": "naomi.diaz@example.com",
+    "Category": "Billing Support",
+    "Description": "I want to request a formal quote for a premium subscription, including all applicable taxes. Could you assist with this?",
+    "Status": "New",
+    "AssignedPerson": "Liam Thomas"
+  },
+  {
+    "CaseNumber": "CS2024-00083",
+    "CustomerName": "Ezekiel Patterson",
+    "Email": "ezekiel.patterson@example.com",
+    "Category": "Technical Support",
+    "Description": "The mobile app is not syncing real-time data with the desktop version. I need my updates to reflect instantly across devices. Could you resolve this?",
+    "Status": "In Progress",
+    "AssignedPerson": "Ryan Harris"
+  },
+  {
+    "CaseNumber": "CS2024-00084",
+    "CustomerName": "Genesis Brooks",
+    "Email": "genesis.brooks@example.com",
+    "Category": "General Inquiry",
+    "Description": "What is the typical response time for support requests? I'm considering upgrading to a premium plan and want to know if the SLA is different.",
+    "Status": "Closed",
+    "AssignedPerson": "Grace Walker"
+  },
+  {
+    "CaseNumber": "CS2024-00085",
+    "CustomerName": "Eli Richardson",
+    "Email": "eli.richardson@example.com",
+    "Category": "Technical Support",
+    "Description": "I keep encountering an error when I attempt to save my progress on large projects. The system shows a 'Save Failed' message. Please help resolve this.",
+    "Status": "Open",
+    "AssignedPerson": "Emma Mitchell"
+  },
+  {
+    "CaseNumber": "CS2024-00086",
+    "CustomerName": "Ariana Bell",
+    "Email": "ariana.bell@example.com",
+    "Category": "Billing Support",
+    "Description": "I was eligible for a promo code during checkout, but the discount wasn’t applied. Can you retroactively add the discount to my account?",
+    "Status": "New",
+    "AssignedPerson": "Ethan Robinson"
+  },
+  {
+    "CaseNumber": "CS2024-00087",
+    "CustomerName": "Hudson Rivera",
+    "Email": "hudson.rivera@example.com",
+    "Category": "General Inquiry",
+    "Description": "Does your platform comply with GDPR regulations? I work with EU customers and need assurances that their data remains protected.",
+    "Status": "In Progress",
+    "AssignedPerson": "Sophia Lopez"
+  },
+  {
+    "CaseNumber": "CS2024-00088",
+    "CustomerName": "Aurora James",
+    "Email": "aurora.james@example.com",
+    "Category": "Technical Support",
+    "Description": "I'm unable to upload videos to the platform. The upload freezes halfway through and never completes. Could this be a server-related issue?",
+    "Status": "Open",
+    "AssignedPerson": "Benjamin Harris"
+  },
+  {
+    "CaseNumber": "CS2024-00089",
+    "CustomerName": "Brayden Foster",
+    "Email": "brayden.foster@example.com",
+    "Category": "Billing Support",
+    "Description": "I paid for a team subscription, but only one user account is active. Could you activate the additional accounts included in the plan?",
+    "Status": "New",
+    "AssignedPerson": "Olivia Scott"
+  },
+  {
+    "CaseNumber": "CS2024-00090",
+    "CustomerName": "Penelope White",
+    "Email": "penelope.white@example.com",
+    "Category": "General Inquiry",
+    "Description": "Are there any case studies or testimonials available from companies in my industry? I’d like to understand how others benefit from using your platform.",
+    "Status": "Closed",
+    "AssignedPerson": "Lucas Robinson"
+  },
+  {
+    "CaseNumber": "CS2024-00091",
+    "CustomerName": "Evan Bailey",
+    "Email": "evan.bailey@example.com",
+    "Category": "Technical Support",
+    "Description": "Your platform is logging me out unexpectedly during long sessions. I rely on uninterrupted access for my work. Could you look into this issue?",
+    "Status": "On Hold",
+    "AssignedPerson": "Amelia Thompson"
+  },
+  {
+    "CaseNumber": "CS2024-00092",
+    "CustomerName": "Valentina Washington",
+    "Email": "valentina.washington@example.com",
+    "Category": "Billing Support",
+    "Description": "I need a receipt with my VAT details to submit for reimbursement. Could you update the invoice and resend it?",
+    "Status": "New",
+    "AssignedPerson": "Ryan Walker"
+  },
+  {
+    "CaseNumber": "CS2024-00093",
+    "CustomerName": "Axel Morris",
+    "Email": "axel.morris@example.com",
+    "Category": "Technical Support",
+    "Description": "The drag-and-drop functionality isn’t working on the web interface. I’ve tried refreshing the browser and clearing the cache, but it didn’t help.",
+    "Status": "Open",
+    "AssignedPerson": "Sophia Ramirez"
+  },
+  {
+    "CaseNumber": "CS2024-00094",
+    "CustomerName": "Violet Patterson",
+    "Email": "violet.patterson@example.com",
+    "Category": "General Inquiry",
+    "Description": "I’d like to suggest a feature: the ability to customize dashboards per user. This would help my team tailor the experience to their needs.",
+    "Status": "Closed",
+    "AssignedPerson": "Charlotte Parker"
+  },
+  {
+    "CaseNumber": "CS2024-00095",
+    "CustomerName": "Nathaniel Hughes",
+    "Email": "nathaniel.hughes@example.com",
+    "Category": "Billing Support",
+    "Description": "Can I switch my subscription from annual to monthly without incurring penalties? My needs have changed, and I prefer more flexibility.",
+    "Status": "In Progress",
+    "AssignedPerson": "Henry Nelson"
+  },
+  {
+    "CaseNumber": "CS2024-00096",
+    "CustomerName": "Madeline Jenkins",
+    "Email": "madeline.jenkins@example.com",
+    "Category": "Technical Support",
+    "Description": "My account history is showing duplicate entries for the same activity. I need accurate records, so could you investigate this for me?",
+    "Status": "Open",
+    "AssignedPerson": "Zoe Martin"
+  },
+  {
+    "CaseNumber": "CS2024-00097",
+    "CustomerName": "Jasper Cooper",
+    "Email": "jasper.cooper@example.com",
+    "Category": "General Inquiry",
+    "Description": "Does your company offer white-label solutions? I’d like to use your platform with our branding for client-facing purposes.",
+    "Status": "On Hold",
+    "AssignedPerson": "Emma Baker"
+  },
+  {
+    "CaseNumber": "CS2024-00098",
+    "CustomerName": "Savannah Reed",
+    "Email": "savannah.reed@example.com",
+    "Category": "Billing Support",
+    "Description": "I tried to apply my discount code during checkout, but it says the code is no longer valid. The promotion ends today, so could you honor it?",
+    "Status": "New",
+    "AssignedPerson": "Daniel Scott"
+  },
+  {
+    "CaseNumber": "CS2024-00099",
+    "CustomerName": "Caleb Torres",
+    "Email": "caleb.torres@example.com",
+    "Category": "Technical Support",
+    "Description": "The system logs me out every 15 minutes, even though I have auto-save enabled. Can you check if there’s a setting I need to change?",
+    "Status": "Open",
+    "AssignedPerson": "Benjamin Lopez"
+  },
+  {
+    "CaseNumber": "CS2024-00100",
+    "CustomerName": "Autumn Gray",
+    "Email": "autumn.gray@example.com",
+    "Category": "General Inquiry",
+    "Description": "Do you have a self-hosted option for your platform? I’d like to explore this for better control over data and performance.",
+    "Status": "Closed",
+    "AssignedPerson": "Amelia White"
+  },
+  {
+    "CaseNumber": "CS2024-00101",
+    "CustomerName": "",
+    "Email": "liam.wilson@example.com",
+    "Category": "Billing Support",
+    "Description": "I was charged an incorrect amount on my last invoice. Can you verify and adjust it?",
+    "Status": "New",
+    "AssignedPerson": "Sophia Green"
+  },
+  {
+    "CaseNumber": "CS2024-00102",
+    "CustomerName": "Olivia Brown",
+    "Email": "olivia.brownexample.com", 
+    "Category": "General Inquiry",
+    "Description": "Do you have any features planned for integrating with CRM tools? We are looking for seamless data transfers.",
+    "Status": "New",
+    "AssignedPerson": "Charlotte Harris"
+  },
+  {
+    "CaseNumber": "CS2024-00103",
+    "CustomerName": "Alexander Davis",
+    "Email": "alexander.davis@example.com",
+    "Category": "Technical Support",
+    "Description": "",
+    "Status": "New",
+    "AssignedPerson": "Ethan Carter"
+  },
+  {
+    "CaseNumber": "CS2024-00104",
+    "CustomerName": "Harper Lopez",
+    "Email": "",
+    "Category": "Billing Support",
+    "Description": "I need assistance retrieving an old invoice from six months ago. It’s missing from my account records.",
+    "Status": "New",
+    "AssignedPerson": "Emily Martinez"
+  },
+  {
+    "CaseNumber": "CS2024-00105",
+    "CustomerName": "",
+    "Email": "mia.walker@example.com",
+    "Category": "General Inquiry",
+    "Description": "What is the fastest way to contact support if there is an urgent issue outside of office hours?",
+    "Status": "New",
+    "AssignedPerson": "Henry Gray"
+  },
+  {
+    "CaseNumber": "CS2024-00106",
+    "CustomerName": "Lucas White",
+    "Email": "lucas.white@example.com",
+    "Category": "Technical Support",
+    "Description": "",
+    "Status": "New",
+    "AssignedPerson": "Amelia Cooper"
+  },
+  {
+    "CaseNumber": "CS2024-00107",
+    "CustomerName": "Emma Rivera",
+    "Email": "email@incorrect", 
+    "Category": "Technical Support",
+    "Description": "Error messages keep appearing when I try to save my progress on the web app. This is frustrating.",
+    "Status": "New",
+    "AssignedPerson": "Noah Scott"
+  },
+  {
+    "CaseNumber": "CS2024-00108",
+    "CustomerName": "Jackson Phillips",
+    "Email": "",
+    "Category": "General Inquiry",
+    "Description": "Are you planning to release a mobile app update soon? The current version is slow on Android devices.",
+    "Status": "New",
+    "AssignedPerson": "Olivia Turner"
+  },
+  {
+    "CaseNumber": "CS2024-00109",
+    "CustomerName": "",
+    "Email": "",
+    "Category": "Technical Support",
+    "Description": "The platform crashes when I open a large project file. This issue has been ongoing for the past week.",
+    "Status": "New",
+    "AssignedPerson": "Ryan Adams"
+  },
+  {
+    "CaseNumber": "CS2024-00110",
+    "CustomerName": "Sophia Campbell",
+    "Email": "sophia.campbell@example.com",
+    "Category": "Billing Support",
+    "Description": "I need to change my billing cycle from quarterly to monthly. Please guide me through this.",
+    "Status": "New",
+    "AssignedPerson": "Benjamin Mitchell"
+  }
 ]
