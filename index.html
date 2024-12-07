@@ -25,6 +25,22 @@
         tr:hover { background-color: #ddd; }
         a { text-decoration: none; color: #007BFF; }
         a:hover { text-decoration: underline; }
+        .pagination {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .pagination button {
+            margin: 0 5px;
+            padding: 5px 10px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        .pagination button.disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
     </style>
 </head>
 <body>
@@ -44,29 +60,9 @@
         <tbody></tbody>
     </table>
 
-    <script>
-        // Fetch and parse the JSON file
-        fetch('data.json')
-            .then(response => response.json())
-            .then(data => {
-                const tableBody = document.querySelector('#issueTable tbody');
+    <!-- Pagination Controls -->
+    <div class="pagination" id="paginationControls"></div>
 
-                data.forEach(issue => {
-                    const row = document.createElement('tr');
-                    
-                    row.innerHTML = `
-                        <td><a href="issue.html?case=${issue.CaseNumber}">${issue.CaseNumber}</a></td>
-                        <td>${issue.CustomerName}</td>
-                        <td>${issue.Email}</td>
-                        <td>${issue.Category}</td>
-                        <td>${issue.Description.substring(0, 50)}...</td>
-                        <td>${issue.Status}</td>
-                        <td>${issue.AssignedPerson}</td>`;
-                    
-                    tableBody.appendChild(row);
-                });
-            })
-            .catch(error => console.error('Error loading issues:', error));
-    </script>
+    <script src="pagination.js"></script>
 </body>
 </html>
