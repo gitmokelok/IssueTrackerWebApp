@@ -30,7 +30,7 @@ function displayTable(data, page, rowsPerPage) {
             <td>${issue.CustomerName}</td>
             <td>${issue.Email}</td>
             <td>${issue.Category}</td>
-            <td>${issue.Description}</td>
+            <td>${issue.Description.substring(0, 50)}...</td>
             <td>${issue.Status}</td>
             <td>${issue.AssignedPerson}</td>`;
         
