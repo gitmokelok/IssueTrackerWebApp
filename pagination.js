@@ -26,7 +26,7 @@ function displayTable(data, page, rowsPerPage) {
         const row = document.createElement('tr');
         
         row.innerHTML = `
-            <td>${issue.CaseNumber}</td>
+            <td><a href="issue.html?case=${issue.CaseNumber}">${issue.CaseNumber}</a></td>
             <td>${issue.CustomerName}</td>
             <td>${issue.Email}</td>
             <td>${issue.Category}</td>
